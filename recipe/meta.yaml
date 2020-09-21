@@ -74,6 +74,7 @@ extra:
     - ndmaxar
     - RyanHackney
     - conda-forge/r
+    - oblute
 
 # The original CRAN metadata for this package was:
 
