@@ -1,4 +1,4 @@
-{% set version = '0.1.1' %}
+{% set version = "0.1.2" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/geogrid_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/geogrid/geogrid_{{ version }}.tar.gz
-  sha256: 07c54dac348200b5dc4c610fce643d672f1e273ebe8802bff9a6f4241f770a2d
+  sha256: 157dd40be2ab06fc867885ba55eacf003973bec8e5f39ab50f0770fb54d9184b
 
 build:
-  merge_build_host: True  # [win]
-  number: 3
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -57,12 +57,8 @@ test:
 about:
   home: https://github.com/jbaileyh/geogrid
   license: MIT
-  summary: Turn irregular polygons (such as geographical regions) into regular or hexagonal grids.
-    This package enables the generation of regular (square) and hexagonal grids through
-    the package 'sp' and then assigns the content of the existing polygons to the new
-    grid using the Hungarian algorithm, Kuhn (1955) (<doi:10.1007/978-3-540-68279-0_2>).
-    This prevents the need for manual generation of hexagonal grids or regular grids
-    that are supposed to reflect existing geography.
+  summary: Turn irregular polygons (such as geographical regions) into regular or hexagonal grids. This package enables the generation of regular (square) and hexagonal grids through the package 'sp' and then assigns the content of the existing polygons to the new grid using the Hungarian algorithm, Kuhn (1955) (<doi:10.1007/978-3-540-68279-0_2>).
+    This prevents the need for manual generation of hexagonal grids or regular grids that are supposed to reflect existing geography.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
