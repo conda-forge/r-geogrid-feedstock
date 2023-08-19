@@ -3,6 +3,7 @@ About r-geogrid-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-geogrid-feedstock/blob/main/LICENSE.txt)
 
+
 About r-geogrid
 ---------------
 
@@ -11,6 +12,7 @@ Home: https://github.com/jbaileyh/geogrid
 Package license: MIT
 
 Summary: Turn irregular polygons (such as geographical regions) into regular or hexagonal grids. This package enables the generation of regular (square) and hexagonal grids through the package 'sp' and then assigns the content of the existing polygons to the new grid using the Hungarian algorithm, Kuhn (1955) (<doi:10.1007/978-3-540-68279-0_2>). This prevents the need for manual generation of hexagonal grids or regular grids that are supposed to reflect existing geography.
+
 About r-geogrid
 ---------------
 
