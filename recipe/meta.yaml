@@ -30,14 +30,12 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
-
   host:
     - r-base
     - r-rcpp
     - r-rcpparmadillo
     - r-sf
     - r-sp
-
   run:
     - r-base
     - r-rcpp
